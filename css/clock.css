@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html, * {
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    width: 75%;
+    height: 25%;
+    color: white;
+}
+
+.content .message {
+    width: 100%;
+    height: 50%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.content .date {
+    width: 100%;
+    height: 25%;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gruppo', cursive;
+    font-weight: bolder;
+}
+
+.content .clock {
+    width: 100%;
+    height: 25%;
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gruppo', cursive;
+    font-weight: bolder;
+}
+
+.content .day {
+    width: 100%;
+    height: 25%;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: orange;
+}
+
+.dotdot {
+    padding: 0 3px 0 3px;
+    position: relative;
+    bottom: 3px;
+}
+
+footer {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    width: 100%;
+    height: 40%;
+    color: white;
+}
+
+.footer .quote {
+    width: 100%;
+    height: 50%;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+}
+
+.footer .author {
+    width: 100%;
+    height: 50%;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.weather {
+    position: fixed;
+    right: 0;
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-right: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.weather .iconW {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.iconW .imgIcon {
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 50px;
+}
+
+.weather .temperature {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    float: left;
+    font-family: 'Gruppo', cursive;
+    font-weight: bolder;
+}
+
+.temperature .textTemp {
+    padding-top: 4px;
+    font-size: 3rem;
+}
+
+.weather .city {
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.weatherDetail {
+    display: none;
+    position: fixed;
+    right: 25px;
+    top: 120px;
+    width: 500px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+}
+
+.active {
+    display: inline;
+}
+
+.passive {
+    display: none;
+}
+
+.weatherDetail .cityDetail {
+    width: 100%;
+    height: 35%;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.weatherDetail .cityDetail .cityName {
+    font-size: 1.8rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.weatherDetail .cityDetail .weatherDesc {
+    font-size: 0.9rem;
+    color: rgb(204, 193, 193);
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: capitalize;
+}
+
+.weatherDetail .dayWeatherDetail {
+    width: 100%;
+    height: 55%;
+    font-family: 'Gruppo', cursive;
+}
+
+.weatherDetail .dayWeatherDetail:after {
+    content: "";
+    display: block;
+    margin: 0 auto; 
+    width: 450px;
+    padding-top: 85px;
+    border-bottom: 1px solid rgb(59, 57, 57);
+}
+
+.weatherDetail .dayWeatherDetail .temperatureDetail {
+    display: inline-block;
+    float: left;
+    width: 35%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.weatherDetail .dayWeatherDetail .temperatureDetail .weatherIcon {
+    display: inline-block;
+    width: 45%;
+    float: left;
+    position: relative;
+    left: 5px;
+}
+
+.weatherDetail .dayWeatherDetail .temperatureDetail .temperatureInfo {
+    display: inline-block;
+    width: 55%;
+    float: left;
+    font-size: 5rem;
+    position: relative;
+    top: -13px;
+    left: 10px;
+}
+
+.weatherDetail .dayWeatherDetail .infoDetail {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: 15px;
+    position: relative;
+    top: 7px;
+    font-size: 1.3rem;
+}
+
+.feels, .wind {
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+}
+
+.iDText {
+    color: rgb(204, 193, 193);
+}
+
+.textDegree {
+    font-family: 'Gruppo', cursive;
+    font-size: 1.5rem;
+}
+
+.todo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 45px;
+    color: white;
+    cursor: pointer;
+}
+
+.todo-button {
+    font-size: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.todo-list-detail {
+    position: fixed;
+    right: 45px;
+    bottom: 55px;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(32, 11, 11);
+}
+
+.settings {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-setting {
+    font-size: 1.5rem;
+}
+
+.fa-cog {
+    opacity: 0.8;
+}
+
+.settings-detail {
+    position: fixed;
+    left: 45px;
+    bottom: 55px;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+}
+
+.settings-detail .form-settings {
+    padding: 30px 25px 10px 25px;
+}
+
+.owner-input {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.owner-birthdate {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #bf800d;
+    color: white;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.crypto-currency {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 45px;
+    color: white;
+    cursor: pointer
+}
+
+.icon-crypto {
+    font-size: 2rem;
+}
+
+.crypto-currency-detail {
+    position: fixed;
+    left: 45px;
+    top: 60px;
+    width: 250px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.crypto-currency-detail::-webkit-scrollbar {
+    display: none;
+}
+
+.crypto-item {
+    width: 100%;
+    height: 25px;
+    padding-top: 10px;
+    border-bottom: 1px solid orange;
+}
+
+.crypto-item:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.crypto-name {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+}
+
+.crypto-price {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+}
+
+#crypto-name {
+    padding-left: 20px;
+}
+
+#crypto-price {
+    padding-left: 20px;
+}

@@ -3,13 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon/icon.svg" type="image/x-icon">
-    <title>Dexilicious</title>
-    <link rel="stylesheet" href="dexilez.css">
+    <title></title>
+    <link rel="icon" href="images/favicon.svg">
+    <script src="https://kit.fontawesome.com/e897b19fc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/clock.css">
 </head>
 <body>
-    <main>
-        <h2>Dexilicious</h2>
-    </main>
+
+    <div onclick="toggle(this.id)" id=".weatherDetail" class="weather">
+        <div class="iconW"></div>
+        <div class="temperature"><div class="textTemp"></div></div>
+        <div class="city"></div>
+    </div>
+
+    <div class="weatherDetail">
+          <div class="cityDetail">
+              <div class="cityName">Istanbul</div>
+              <div class="weatherDesc"></div>
+          </div>
+          <div class="dayWeatherDetail">
+              <div class="temperatureDetail">
+                  <div class="weatherIcon"></div>
+                  <div class="temperatureInfo"></div>
+              </div>
+              <div class="infoDetail">
+                  <div class="feels"><span class="iDText">Feels like </span><span class="textDegree"></span></div>
+                  <div class="wind"><span class="iDText">Wind </span><span class="textDegree"></span></div>
+              </div>
+          </div>
+    </div>
+
+    <div onclick="toggle(this.id)" id=".todo-list-detail" class="todo">
+        <div class="todo-button">Todo</div>
+    </div>
+
+    <div class="todo-list-detail">
+    </div>
+
+    <div onclick="toggle(this.id)" id=".settings-detail" class="settings">
+        <span class="icon-setting"><i class="fas fa-cog"></i></span>
+    </div>
+
+    <div class="settings-detail">
+        <form class="form-settings">
+            <input class="owner-input" type="text" name="ownername" id="ownername" placeholder="Your Name" maxlength="15" required>
+            <input class="owner-birthdate" type="date" name="birthdate" id="birthdate" required>
+            <input class="submit-button" type="button" value="Save">
+        </form>
+    </div>
+
+    <div onclick="toggle(this.id)" id=".crypto-currency-detail" class="crypto-currency">
+        <span class="icon-crypto"><i class="fab fa-bitcoin"></i></span>
+    </div>
+
+    <div class="crypto-currency-detail">
+    </div>
+
+    <span class="all">
+        <main>
+            <div class="content">
+                <div class="message">
+                    <div class="message-info">
+                        <span class="message-content"></span>
+                    </div>
+                </div>
+                <div class="clock">
+                    <div class="clock-info"></div>
+                </div>
+                <div class="day">
+                    <div class="day-info"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="quote"></div>
+                <div class="author"></div>
+            </div>
+        </footer>
+    </span>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/clock.js"></script>
+
 </body>
 </html>
