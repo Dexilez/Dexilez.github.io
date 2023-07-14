@@ -1,0 +1,228 @@
+html, body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("to.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    background-color: #000000a4;
+    width: 300px !important;
+    height: 200px;
+    text-align: center;
+    z-index: 999;
+}
+
+.combine {
+    width: 250px !important;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: gray;
+    display: flex;
+}
+
+.gem {
+    width: 40%;
+    float: left;
+}
+
+.plus {
+    width: 20%;
+    float: left;
+    padding-top: 12px;
+    font-weight: 900;
+}
+
+.talisman {
+    width: 40%;
+    float: right;
+}
+
+.button {
+    width: 250px !important;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.combine-button {
+    font-size: 25px;
+    height: 70px;
+}
+
+.chat {
+    width: 650px !important;
+    height: 400px;
+    max-height: 400px !important;
+    overflow: auto;
+    display: flex;
+    flex-direction:column;
+    background-color: #000000a4;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.system {
+    color: yellow;
+    width: 100% !important;
+    float: left;
+}
+
+.system-title {
+    float: left;
+}
+
+.system-content {
+    text-align: left;
+    width: 79%;
+    height: 100% !important;
+    float: left;
+    padding-left: 10px;
+}
+
+.world {
+    color: cyan;
+    width: 100% !important;
+    height: 30px;
+    float: left;
+}
+
+.world-title {
+    float: left;
+    height: 100% !important;
+    padding-top: 5px;
+}
+
+.world-content {
+    text-align: left;
+    width: 79%;
+    height: 100% !important;
+    float: left;
+    padding-left: 10px;
+}
+
+.rumor {
+    color: orange;
+    width: 100% !important;
+    float: left;
+}
+
+.rumor-title {
+    float: left;
+}
+
+.rumor-content {
+    text-align: left;
+    width: 79%;
+    height: 100% !important;
+    float: left;
+    padding-left: 10px;
+}
+
+.rumor-item {
+    color: yellow;
+}
+
+.info {
+    position: absolute;
+    width: 500px;
+    height: 75px;
+    left: 25px;
+    top: 25px;
+}
+
+.character {
+    float: left;
+    width: 100% !important;
+}
+
+.photo-level {
+    width: 30%;
+    float: left;
+}
+
+.photo {
+    float: left;
+    width: 100% !important;
+    position: relative;
+    z-index: 998;
+}
+
+.img-char {
+    width: 125px;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+.level {
+    position: absolute;
+    margin-top: 103px;
+    margin-left: -130px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 999;
+    font-size: 20px;
+    color: white;
+}
+
+.info-char {
+    width: 55%;
+    float: left;
+    background-color: #00000071;
+    margin-left: -80px;
+    margin-top: 27px;
+    border-radius: 5%;
+}
+
+.char-name {
+    padding-left: 120px;
+    font-weight: 800;
+}
+
+.health {
+    padding-left: 94px;
+    background-color: red;
+    font-weight: 800;
+}
+
+.resource {
+    font-weight: 800;
+}
+
+.blue {
+    background-color: blue;
+    padding-left: 94px;
+}
+
+.green {
+    background-color: rgb(99, 160, 7);
+    padding-left: 111px;
+}
+
+.logout {
+    float: left;
+    width: 15% !important;
+    position: relative;
+    z-index: 998;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
