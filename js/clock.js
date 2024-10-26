@@ -6,8 +6,6 @@ var favIcon = document.querySelector("link[rel~='icon']");
 const dailyMessage = document.querySelector(".message-content");
 const clockInfo = document.querySelectorAll(".clock-info");
 const dayInfo = document.querySelector(".day-info");
-const quote = document.querySelector(".quote");
-const author = document.querySelector(".author");
 
 const main = document.querySelector(".all");
 
@@ -47,7 +45,6 @@ var dayOfTheWeeks = [
 ]
 
 clockLive();
-todayQuote();
 getBackgroundImage();
 
 function clockLive () {
