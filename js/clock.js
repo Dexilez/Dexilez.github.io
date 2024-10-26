@@ -165,7 +165,7 @@ function getBackgroundImage () {
                     .then(response => response.json())
                     .then(data => {
                     let len = data.length;
-                    let bgDice = getRandomNumberBetween(0,len);
+                    let bgDice = getRandomNumberBetween(1,len)-1;
                     let backgroundUrl = data[bgDice].urls.full;
                     document.body.style.backgroundImage = `url('` + backgroundUrl + `')`;
                     });
@@ -191,7 +191,7 @@ function getBackgroundImage () {
                     .then(response => response.json())
                     .then(data => {
                     let len = data.length;
-                    let bgDice = getRandomNumberBetween(0,len);
+                    let bgDice = getRandomNumberBetween(1,len)-1;
                     let backgroundUrl = data[bgDice].urls.full;
                     document.body.style.backgroundImage = `url('` + backgroundUrl + `')`;
                     });
@@ -209,7 +209,7 @@ function getBackgroundImage () {
                     .then(response => response.json())
                     .then(data => {
                     let len = data.length;
-                    let bgDice = getRandomNumberBetween(0,len);
+                    let bgDice = getRandomNumberBetween(1,len)-1;
                     let backgroundUrl = data[bgDice].urls.full;
                     document.body.style.backgroundImage = `url('` + backgroundUrl + `')`;
                     });
