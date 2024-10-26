@@ -141,22 +141,6 @@ function clockLive () {
     setTimeout(clockLive, secMS);
 }
 
-function todayQuote () {
-    var todayDate = new Date();
-    var dayOfWeek = todayDate.getDay();
-    fetch("https://type.fit/api/quotes")
-    .then(response => response.json())
-    .then(data =>
-        {
-            if (data[dayOfWeek].author == null) {
-                quote.innerText = `"${data[dayOfWeek].text}"`;
-            } else {
-                quote.innerText = `"${data[dayOfWeek].text}"`;
-                author.innerText = data[dayOfWeek].author.replace(", type.fit", "");
-            }
-        });
-}
-
 function getRandomNumberBetween(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
